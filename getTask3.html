@@ -1,0 +1,36 @@
+<!-- 3.	Write express js script to perform tasks as asked below.
+A.	Create one HTML file which contains two number type input fields, one dropdown which contains options like (select, addition, subtraction, multiplication, division) and one submit button. 
+B.	The input fields must contain the value greater than 0 else it will give a message “Please enter the valid number”. Also, user must select any of the formula from the dropdown else give a message “You have not selected any formula”. (Message will be displayed on “/calc” page.)
+C.	If one formula is selected and numbers are entered then respective calculations will be performed on the page “/calc”. 
+D.	Use get method to request data. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>General Form</legend>
+        <form action="/calc" method="get">
+            <label>Enter First number:<input type="number" min="1" name="a"></label>
+            <br>
+            <br>
+            <label>Enter Second number:<input type="number" min="1" name="b"></label>
+            <select name="operation">
+                <option value="">--select--</option>
+                <option value="add">Addition</option>
+                <option value="sub">Subtraction</option>
+                <option value="mul">Multiplication</option>
+                <option value="div">division</option>
+            </select>
+            <br><br>
+            <input type="submit">
+        </form>
+    </fieldset>
+</body>
+
+</html>

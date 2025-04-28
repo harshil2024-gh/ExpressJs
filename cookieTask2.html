@@ -1,0 +1,36 @@
+<!-- .  You have been assigned to develop a user feedback form for a website using Express.js and cookies. 
+Implement the following requirements:
+•	Create a form with the following fields:
+o	Name (input field)
+o	Email (input field)
+o	Message (textarea field)
+o	Rating (radio buttons: Bad, Average, Good, Very Good, Excellent) 
+•	When the user submits the form, store their feedback information (name, email, message, and rating) in a cookie named "feedback" that expires in 10 seconds.
+•	Display a confirmation message to the user after successfully submitting the form & Create a link to display the feedback details stored in the "feedback" cookie. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        Username:<input type="text" name="un" required>
+        <br><br>
+        Email:<input type="email" name="eid" required>
+        <br><br>
+        Enter Message:<textarea name="msg" required></textarea>
+        <br><br>
+        <input type="radio" name="rating" value="good">Good
+        <input type="radio" name="rating" value="average">Average
+        <input type="radio" name="rating" value="bad">Bad
+        <input type="submit">
+    </form>
+</body>
+
+</html>

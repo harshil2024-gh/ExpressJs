@@ -1,0 +1,23 @@
+<!-- 2.	Write express js script to perform the tasks as asked below.
+a.	Create one HTML file named ljform.html and add one form which contains username, password and submit button. Data should be submitted by HTTP post method.  Submit button is of black color with white text. (External CSS).On home page form should be displayed and while submitting the form, on next page named “/login” if username is admin then it will display “Welcome admin” else display  “Please login with admin name”.  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ljform.css">
+</head>
+
+<body>
+    <form action="/login" method="post">
+
+        Enter Name:<input type="text" name="un1" placeholder="Enter your name">
+        <br><br>
+        Enter Password:<input type="password" name="pw" placeholder="Enter your Password">
+        <input class="btn" type="submit">
+    </form>
+</body>
+
+</html>
