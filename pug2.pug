@@ -1,0 +1,43 @@
+html
+   head
+   body
+
+        h3 Test
+            | Hello
+            | Sem4 FSD2
+        h4(style="color:red;font-size:60px;") Pug Example
+        ul(type="square")
+            li mango
+            li Banana
+            a(href="/",target='_blank',style="color:purple") Home 
+            br
+            a(
+                    href='/'
+                target="_blank"
+                style="color:purple"
+            ) About
+        table(style="border:1px solid black" rules="all")
+            tr
+                th Name 
+                th Roll No
+            tr
+                td akash 
+                td 20 
+            tr
+                td arjun
+                td 21
+            tr
+                td bhaskar
+                td 23
+
+        //This is buffered comment This will show in code while insepecting code.
+        //-This is unbuffered comment This will not shown while insepecting code.
+
+        //unbuffered code
+        -var num=3
+        -var color='black'
+        -var list=["India","USA"]
+        //buffered code
+        h4="Multiplication:"+num*10
+        h2="color:"+color
+        p="country "+list[0]
